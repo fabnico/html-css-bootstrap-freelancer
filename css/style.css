@@ -4,40 +4,178 @@
    color: white;
 }
 
-#header-bottom{
-   background-color: #1ABC9C;
+.navbar-l{
+   height: 80px;
 }
 
-#header-bottom .row .col-lg-12{
-   position: relative;
+.navbar-l > div{
+   font-size: 2.5rem;
+   line-height: 80px;
 }
 
-.h-b-content{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   border: 1px solid yellow;
+ul > li{
+   display: inline-block;
+   line-height: 80px;
+}
+
+ul > li > a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.5rem;
+   margin-right: 30px;
 }
 
 .navbar-r{
    text-align: right;
+   height: 80px;
+}
+
+#header-bottom{
+   background-color: #1ABC9C;
+   padding: 40px 0;
+}
+
+.h-b-content{
+   text-align: center;
+   color: white;
+}
+
+.h-b-content :nth-child(2){
+   font-size: 50px;
+   margin-top:
+}
+
+.h-b-content img{
+   width:200px;
+}
+
+.h-b-content :nth-child(4){
+   font-size: 20px;
+}
+
+.star-w{
+   margin: 0 20px;
+   display: inline-block;
+   color: white;
+   font-size: 40px;
+   vertical-align: middle;
+}
+
+
+.srow-w{
+   border: 2px solid white;
+   height: 1px;
+   width: 120px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.my_text{
+   font-size: 40px;
+}
+
+.star-b{
+   margin: 0 20px;
+   display: inline-block;
+   color: #2C3E50;
+   font-size: 40px;
+   vertical-align: middle;
+}
+
+.srow-b{
+   border: 2px solid #2C3E50;
+   height: 1px;
+   width: 120px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#portfolio{
+   padding: 40px 0;
+}
+
+#portfolio img{
+   height: 250px;
+   border-radius: 10px;
+   margin-bottom: 30px;
 }
 
 #about{
    background-color: #1ABC9C;
+   padding: 40px 0;
+}
+
+#about div {
+   color: white;
+}
+
+#about .row div:nth-child(2),#about .row div:nth-child(3){
+   font-size: 18px;
+}
+
+#about a[class="btn btn-default"]{
+   background-color: transparent;
+   color: white;
+   border-color: white;
+   font-size: 20px;
+   margin: 20px 0;
+}
+
+#contact{
+   padding: 40px 0;
+}
+
+input[class="form-control"]::placeholder,textarea[class="form-control"]::placeholder {
+   color: #2C3E50;
+   font-weight: bold;
+}
+
+input[class="form-control"], textarea[class="form-control"]{
+   border-top:none;
+   border-left: none;
+   border-right: none;
+   box-shadow: none;
+   border-radius: 0;
+}
+
+#contact [class="btn btn-default"]{
+   background-color: #1ABC9C;
+   color: white;
+   border: none;
+   font-weight: bold;
+   padding: 10px;
 }
 
 #footer-top{
    background-color: #3A546D;
    color: white;
+   padding: 40px 0;
 }
+
+.f-t-content span{
+   font-size: 30px;
+}
+
+.f-t-content div{
+   font-size: 20px;
+   line-height: normal;
+}
+
+#footer-top i{
+   margin-right: 15px;
+}
+
+#my_green{ /*È una porcheria, lo so, lo ritocco dopo aver completato*/
+   color: #1ABC9C;
+   font-size: 20px;
+}
+
 
 #footer-bottom{
    background-color: #2C3E50;
    color: white;
+   padding: 40px 0;
 }
-
 
 .my_container{
    width: 90%;
@@ -45,35 +183,3 @@
 }
 
 /*Media query*/
-
-
-/*Debug*/
-
-[class*="col-"]{
-   border: 1px solid red;
-}
-
-.h-100{
-   height: 100px;
-}
-
-.h-200{
-   height: 200px;
-}
-
-.h-300{
-   height: 300px;
-}
-
-.h-500{
-   height: 500px;
-}
-
-#portfolio{
-   text-align: center;
-   line-height: 100px;
-}
-
-#about{
-   text-align: center;
-}
